@@ -1,0 +1,260 @@
+html standards for maerkup language.
+to develop anyb web site we require 3 languages such as html,css,js.
+The html is one of the core language to develop any website.
+The html definds the actual structure of the web page and this is used to display some content on the web page or browser without any styles such as paragraphs ,headings,images etc..
+Each html document contains an extension .html,we execute the html doc on the browser.
+Each html doc contains full of html tags.
+When we  execute the html doc on the browser,the browser reads the html doc and display the only content on d web page without html tags it means html tags will not be display on d browser instead the content (text) will be displayed on the browser.
+The html language is static programing language where we can't display the dynamic content on the webpage only with html for this we have to use the languag javascript
+
+
+-->struture of html doc:(daigram)
+	<html>
+	<head>
+	<body>
+Each html doc is representated with the tag <html>.....</html>
+					  start tag    end tag
+Each html doc contains 2 part such as 1)Head,2)Body
+The head section of html doc is represented with the following tag <head> --------</head>
+								start tag        end tag
+In the head section we will specify the title of the web page , some meta information ,few css,javca script configuration
+the body section html doc is represented with the following tag eq:-<body>-----</body>
+								start tag      end tag
+This is very imp section the entire html document.
+The body section indicates th complete visible area of the entire web page
+
+
+-->html first application:
+1 <!DOCTYPE html>
+ 2  <html>
+  3   <head>
+4	<title>welcome</title>
+ 5    </head>
+  6   <body>
+7	<h1>welcome to html</h1>
+ 8    </body>
+  9 </html>
+
+line 1 indicates the document tpe html
+this informs the browser that all the following tags are from html language and display them on the browser in html 5 way.
+line 2 to 9 indicatesentire html docu
+where line 2 indicates the strat tag of html
+     line 9 indicates the end tag of html.
+	line 3 4 5 indicates head section of html
+		line 4 indicates title of the webpage.the title will be displayed on the tab of a webpage
+line 6 -->9 indicates the body section of html doc
+  line 7 indicates the main heading of html content this will display the visible area of the webpage
+
+
+-->Rules for writing html doc:
+	1.We should always write the html tags in lower case only.
+	2.Each html content our text should be b/w the start tag and end tag.
+	3.Each html tag is also called as html element.
+	4.Each html tag contains few html attributes.
+	5.The html attributes provides an extra information for each html tag.
+		example:<img src="image1.jpg" width="300" height="300">
+		     htmltag   html attribute   html attribute
+		or html element
+	6.Each html attribute contains a key value pair amd we must add the html attribute for html start tag only.
+
+-->Html heading tags:
+These are for displaying
+
+
+-->Html div tag:
+	1)the html div tag is used to divide the webpage into various divisions or sections.
+ 	2)The html div tag acts like a container to hole various html elements.
+	3)The div tag is a structural tag just to defind the structure and no styles to will applied by difault , we can apply the style by using CSS
+  ex:-
+<div>
+ <h1>HTML</h1>
+  <p>-----</p>
+  <p>-----</p>
+</div>
+
+<div style="background color:"green">
+  <h1>HTML</h1>
+  <p>-----</p>
+  <p>-----</p>
+</div>
+
+-->html span tag:
+ <span> 
+</span>
+1)The html span tag is used to apply some styles for a specific words or a group of words inside a paragraph.
+2)Just by adding a span tag no styles will be applied by default , we can apply the styles by using CSS.
+ex: 
+<p>----<span style="background-color:blue">we are great</span>-----</p> 
+ 
+
+
+-->Html text formating tags:
+	  
+1)we will use the following html tags to apply various text formating for the html content.The text formating tags are as follows:
+		<i>     --italic text
+		<em>    --emphasized text
+		<mark>  --marked text
+		<small> --small text
+		<del>   --deleted text
+		<ins>   --inserted text
+		<sub>   --subscript text
+		<sup>   --superscript text
+-->Html list tags:
+ 
+	We can display the html content on the web page in the list format is by using html list tags
+	In html there are two types of lists are available in html
+		1.Unordered list 
+		2.Ordered list
+-->Unordered list
+ 	1.THe html unordered list is representated with the tag called <ul> 
+	2.Each option in unordered list is represented with <li> is called list item
+ex: <ul>
+	<li>Html</li>
+	<li>CSS</li>
+   </ul>
+
+
+
+output 
+
+In html there 4 types of unordered list
+ such as: 1.disc 2.circle 3. square 4.none
+BY default, each list item in unordered list will be displayed as disc format
+
+we can change this by using type attribute.
+ex:
+<ul type="circle">
+	<li>html</li>
+	<li>CSS</li>
+	<li>java script</li>
+</ul>
+
+2.Ordered list:
+ 1.In html the ordered list is represented with rthe tag <ol>
+ 2.Is list item in ordered list is represented with the tag<li>
+ex:
+<ol>
+ <li>html</li>
+ <li>html></li>
+</ol>
+There are 5 types of ordered list in html  
+such as type='a'
+ 	type='A'
+ 	type='i'
+ 	type='I'
+ 	type='l'
+
+By default,each ordered list will display the list items with type='l'
+we can change this type  attribute
+ex:
+<ol>
+ <li>html</li>
+ <li>html></li>
+</ol>
+
+
+
+-->images:
+html <img> tg
+We can display images on the webpages using html <img> tag
+this tag contains following attribute 
+1.src-- this is mandatory att for img tag.thois specifoes address of the image.
+we can specify the address in 2 ways such as
+				1.abs path
+				2.relative path
+In abs path we will specify the address using the 'root' folder
+ex <img src="c:/workspace/images/1.jpg">
+
+In relative path we will specify the address using the current folder location
+ex <img src="img/image1.jpg">
+
+
+****Note:we should never use abs in real time.****
+
+
+to come from the .html folder to the image folder u use the structure\
+
+src+"../a.img
+ the . represents the no.of steps to come back
+
+
+2.width.height:this attribute indicates the custom width and height of an image
+
+
+	
+3.alt:this indicates the order of text for an image.the alternate text will be displayed if the image is not loaded for some reason
+
+if the image is loaded properly then the alternative tex is hidden
+
+
+
+
+--->html tables:
+
+1. we can display the content on the web page using table formate is by using html <table> tag
+		table
+		  \
+s.no		name		address
+1		sai		india
+2		vinay		uk
+
+
+1.each html table is represented with the tag table
+2.each html table conains 2parts 1is head section 2is body section
+3.the head section of the table is represemted with the tag <th>,the body section of the table is rrepresnted with the tab <tbody>
+4.in the table head section each sell is represented with the <th>,each cell in the tables body section is represented with <td>
+5.each row of the table representd with the tag <tr>
+
+
+
+note:
+1.for html table bydefault no borders will be applied,we can apply the borders using css
+2.thead,tdoby tags are optional
+
+
+1.each table tag contains 2 mandatory attributes such as 1 is colspan and 2 rowspan
+
+
+colspan:the colspan attribute is used to combine 2 or more colums,we normally use colspan for <th> tag
+
+rowspan:
+1.the rowspan attribute is used tom combine 2 or more rows 
+2.we normally use the rowspan attribute for <td>
+
+
+
+html links:
+
+1.in html we can display anynormal text as a clikable link or hyper text or hyper link using the html tab called <a> tag (anchor tag)
+ex:
+<a>href="www.google.co.in</a>
+here 'href' indiacts the addrss of web page to be loaded while we click on the 'hypertext'
+
+-->normally each link will be loades the same page of the web page , wecan load the link in next tab using a special attribute 
+
+ex:<a href="facebook.com" target="_blank">facebook</a>
+
+-->we can even convert an image as a hypertag
+
+ex:
+<a href="youtube.com">
+<img src="img/youtube.jpg" width="300"  height="22">
+</a>
+
+note:
+
+here 'href' indicates 
+
+
+-->html entities:
+The html entities are used o disp;ay some reserved characters and some spcial symbols on the webpage.
+ syntax:
+		&entity_name; or &#entity_name;
+	
+symbol					html entity
+  < 					 &lt;
+  >					 &gt;
+  c with cicle				 &copy;
+  r with circle 			&reg;
+  $					&#36;
+  
